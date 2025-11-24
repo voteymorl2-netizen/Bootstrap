@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      .thumbnail {
+        height: 70px;
+        border-radius: 2px;
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .product_main {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="sticky"
+      style="color: black; margin-right: 5px; font-size: 20px"
+    >
+      <img
+      src="https://img.icons8.com/?size=100&id=40217&format=png&color=000000"
+      alt="" / style="width: 24px; height: 24px;">BACK
+    </div>
+    <!-- py is padding -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-3 col-sm-2 col-md-1">
+          <!-- thumbnail -->
+          <div class="sticky">
+            <img
+              src="https://i.pinimg.com/736x/85/d8/1f/85d81fb3e40be9f4540f0860d3dff6cd.jpg"
+              class="thumbnail"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/1200x/2d/63/47/2d63471399c662e9c4d2a7c067eda564.jpg"
+              class="thumbnail"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/1200x/39/4c/57/394c57e661aac4eabd126c3816526a78.jpg"
+              class="thumbnail"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/736x/30/bd/20/30bd203e18faaf8902681482356266cf.jpg"
+              class="thumbnail"
+              alt=""
+            />
+            <img
+              src="https://i.pinimg.com/736x/dd/76/10/dd7610f13edf430abb51c88bd1ca3486.jpg"
+              class="thumbnail"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-9 col-sm-6 col-md-5">
+          <!-- product main -->
+          <div class="sticky">
+            <img
+              src="https://i.pinimg.com/1200x/56/b2/2b/56b22b6edb92ddd53779ca831b98b026.jpg"
+              class="product_main"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 mt-4">
+          <!-- Title -->
+          <h3>Black Scalloped-Edge Backpack</h3>
+          <p style="font-size: 24px; color: blue">10$</p>
+          <p>
+            This is a black Maishidai backpack with a casual and cute design. It
+            features a large main compartment with a front flap pocket and
+            adjustable straps. The bag is decorated with two pins—one daisy
+            flower and one artistic design—and has a small black-and-white
+            stuffed monkey keychain attached. It has a rectangular, slightly
+            structured shape, suitable for school or everyday use. The overall
+            style is youthful, practical, and playful.
+          </p>
+          <!-- Button trigger modal -->
+          <h3>Color</h3>
+          <select
+            class="form-select form-select-sm"
+            aria-label="Small select example"
+            style="margin-bottom: 5px; width: 150px; color: black"
+          >
+            <option selected>select color</option>
+            <option value="1">Black</option>
+            <option value="2">Blue</option>
+            <option value="3">white</option>
+          </select>
+          <div>
+            <h3>Quality</h3>
+            <input type="number" placeholder="quality " / style="margin-bottom:
+            5PX; width: 150PX;">
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Check out
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div
+                  class="modal-header"
+                  style="display: grid; grid-template-columns: 1fr"
+                >
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Please input your email
+                  </h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                  </form>
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
