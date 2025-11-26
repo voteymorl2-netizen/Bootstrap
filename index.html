@@ -10,53 +10,52 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    
+    </style>
   </head>
 
   <body>
-    <header class="p-3 bg-dark text-white fixed-top">
-      <div class="container" bis_skin_checked="1">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          bis_skin_checked="1"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          >
-          </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="https://img.icons8.com/?size=160&id=v0SojsFKBZQW&format=png" 
+           alt="Logo" style="width: 50px; height: 50px;">
+    </a>
 
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li>
-              <a href="./day1.html" class="nav-link px-2 text-secondary"
-                >Home</a
-              >
-            </li>
-            <li><a href="#" class="nav-link px-2 text-white">Shop All</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Collection</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-          </ul>
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <form class="col-6 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input
-              type="search"
-              class="form-control form-control-dark"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      
+      <!-- Left Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="./day1.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop All</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
 
-          <div class="text-end" bis_skin_checked="1">
-            <button type="button" class="btn btn-outline-light me-2">
-              Login
-            </button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
-          </div>
-        </div>
+      <!-- Search -->
+      <form class="d-flex me-3">
+        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <!-- Login / Signup -->
+      <div class="d-flex">
+        <button class="btn btn-outline-light me-2">Login</button>
+        <button class="btn btn-warning">Sign-up</button>
       </div>
-    </header>
+    </div>
+
+  </div>
+</nav>
+
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -140,8 +139,10 @@
             <div class="card-body">
               <h5 class="card-title">Black Scalloped-Edge Backpack</h5>
               <p class="card-text">10$</p>
-              <a href="" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="./product_infor.html" class="btn btn-success" style="width: 110px;margin-top: 5px; margin-bottom: 5px;"
+                >View Detail</a
+              >
             </div>
           </div>
         </div>
@@ -153,8 +154,8 @@
             <div class="card-body">
               <h5 class="card-title">Soft Blue Boho Denim Shoulder Bag</h5>
               <p class="card-text">8$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -166,8 +167,8 @@
             <div class="card-body">
               <h5 class="card-title">Pastel Pink & Blue Structured Work Bag</h5>
               <p class="card-text">15$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -181,8 +182,8 @@
                 Retro Two-Tone Denim & Leather Shoulder Bag
               </h5>
               <p class="card-text">20$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -194,8 +195,8 @@
             <div class="card-body">
               <h5 class="card-title">Mint Green Soft Padded Daypack</h5>
               <p class="card-text">9$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -207,8 +208,8 @@
             <div class="card-body">
               <h5 class="card-title">Retro Mustard Yellow Shoulder Bag</h5>
               <p class="card-text">12$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -219,11 +220,11 @@
             class="card-img-top" alt="..." / style="height: 300px;">
             <div class="card-body">
               <h5 class="card-title">
-                Minimalist Color-Block Tote Bag in Beige and Sage
+                Minimalist Color-Block Tote 
               </h5>
               <p class="card-text">7$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -235,8 +236,8 @@
             <div class="card-body">
               <h5 class="card-title">Retro Camel Leather Shoulder Bag</h5>
               <p class="card-text">9$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -247,11 +248,11 @@
             class="card-img-top" alt="..." / style="height: 300px;">
             <div class="card-body">
               <h5 class="card-title">
-                Sleek Black & Tan Leather Messenger Bag
+                Sleek Black & Tan Leather Messenger
               </h5>
               <p class="card-text">8.5$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -263,8 +264,8 @@
             <div class="card-body">
               <h5 class="card-title">Pink Pastel Quilted Shoulder Bag</h5>
               <p class="card-text">10$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;">View Detail</a>
             </div>
           </div>
         </div>
@@ -276,27 +277,87 @@
             <div class="card-body">
               <h5 class="card-title">Warm Brown Vintage Crossbody Bag</h5>
               <p class="card-text">12$</p>
-              <a href="#" class="btn btn-primary">Buy</a>
-              <a href="" class="btn btn-success">View Detail</a>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;" >View Detail</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mt-4">
-        <div class="card">
-          <img
-          src="https://i.pinimg.com/1200x/e7/21/d6/e721d69638b34713b7f3a59f56ff3aa9.jpg"
-          class="card-img-top" alt="..." / style="height: 300px;">
-          <div class="card-body">
-            <h5 class="card-title">Sporty Tennis‑Racket Shaped Shoulder Bag</h5>
-            <p class="card-text">20$</p>
-            <a href="#" class="btn btn-primary">Buy</a>
-            <a href="" class="btn btn-success">View Detail</a>
+          <div class="card">
+            <img
+            src="https://i.pinimg.com/1200x/e7/21/d6/e721d69638b34713b7f3a59f56ff3aa9.jpg"
+            class="card-img-top" alt="..." / style="height: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">
+                Sporty Tennis‑Racket Shaped 
+              </h5>
+              <p class="card-text">20$</p>
+              <a href="#" class="btn btn-primary" style="width: 110px;">Buy</a>
+              <a href="#" class="btn btn-success" style="width: 110px; margin-top: 5px; margin-bottom: 5px;" >View Detail</a>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-      
+      <div class="container-fluid bg-dark-subtle mt-5 pt-5" >
+  <footer class="row row-cols-2 row-cols-sm-2 row-cols-md-5  border-top" >
+
+    <!-- Logo + Copy -->
+    <div class="col mb-3 text-center text-md-start">
+      <a href="/" class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+        <img
+          src="https://img.icons8.com/?size=160&id=v0SojsFKBZQW&format=png"
+          alt="Logo"
+          style="width: 50px; height: 50px;"
+        />
+      </a>
+      <p class="text-muted">© 2026</p>
+    </div>
+
+    <div class="col mb-3"></div>
+
+    <!-- Column 1 -->
+    <div class="col mb-3">
+      <h5>PRODUCTS</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Backpack</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tote Bag</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Clutch</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Messenger Bag</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Duffel Bag</a></li>
+      </ul>
+    </div>
     
+
+    <!-- Column 2 -->
+    <div class="col mb-3">
+      <h5>LEGAL</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Navigate</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Look</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Choose</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Customize </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Save</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="col mb-3">
+      <h5>CONTACT</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="https://img.icons8.com/?size=100&id=3723&format=png" alt="" style="width: 24px;height: 24px;">Phnom Penh</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="https://img.icons8.com/?size=100&id=60688&format=png&color=000000" alt="" style="width: 24px;height: 24px;">voteymorl2@gmail.com</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="" style="width: 24px;height: 24px;">+885 123 456 789</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> <img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="" style="width: 24px;height: 24px;">BagShope</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="" style="width: 24px;height: 24px;">BagShope</a></li>
+      </ul>
+    </div>
+    
+   
+
+  </footer>
+</div>
+
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
